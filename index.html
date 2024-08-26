@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>个人简介</title>
+    <link rel="stylesheet" type="text/css" href="./css/jieyun.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<style>
+    #canvas {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 2000px;
+        height: 300px;
+        pointer-events: none;
+        transform: scaleX(-1);
+    }
+</style>
+
+<body>
+
+    <div id="box">
+        <!-- 个人资料卡片 -->
+        <div class="meBox">
+            <!-- 头像 -->
+            <div class="headPhoto"></div>
+            <!-- 介绍 -->
+            <div class="meBox-title">
+                <p><b>忆梦</b></p>
+                <div class="fg"></div>
+            </div>
+
+            <div class="meBox-text">
+                <p><img src="" alt="" style="width: 20px; vertical-align: middle;"></p>
+                <p>热爱计算机编程</p>
+                <p>喜欢浪费时间在最在行的地方</p>
+                <p>喜欢二次元，更向往自由。<img src="" alt="" style="width: 15px; vertical-align: middle;"></p>
+            </div>
+            <!-- 两个按钮 -->
+            <div class="meBox-Button">
+                <a href="#" id="playButton">播放音乐</a>
+                <a href='tencent://message/?uin=2872930558&Menu=yes'>联系ＱＱ</a>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <!-- 伪终端介绍 -->
+        <div id="cmdBox">
+            <!-- 第一个终端 -->
+            <div class="cmd">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span><b>info - new</b></span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+
+                    <br>
+                    <span style="color: rgb(0, 190, 0);">Root ©Ning：</span>
+                    <br>
+                    <br>
+
+                    <p>热爱生活， 热爱计算机技术，爱唱歌，喜欢研究感兴趣的事物。</p>
+                    <p>略懂C、PHP、Go、Python、HTML/CSS、JavaScript、NASM、 <br>易语言，对网络安全感兴趣，喜欢逆向工程与渗透测试。</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p style="color:rgb(0, 190, 0);">我喜欢的一句话：</p>
+                    <br>
+                    <p>坐而论道，不如起而行之。</p>
+                    <p>It is better to do than to sit and talk.</p>
+                    <br>
+                    <p>你能找到这里，真的是缘分呐~</p>
+
+                </div>
+            </div>
+            <!-- 第二个终端 -->
+            <div class="cmd cmd2">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span><b>info - home</b></span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <br>
+                    <span style="color: rgb(0, 190, 0);">个人博客：</span>
+                    <span style="color: rgb(39, 39, 39);"><a class="inlink" href="https://meta.natapp4.cc"
+                            style="color:rgba(0, 0, 0, 0.938);" target="_blank">meta.go</a></span>
+                    <br>
+                    <br>
+                    <span style="color: rgb(0, 190, 0);">联系方式：</span>
+                    <span style="color: rgb(39, 39, 39);">QQ: AB3D70FE ( 请转十进制 )</span>
+                    <br>
+                    <br>
+                    <br>
+
+                    <span style="color: rgb(0, 190, 0);">我的留言：</span>
+                    <p>沙雕男孩，喜欢帮助别人，不忘初心。</p>
+                    <br>
+                    <span style="color: rgb(0, 190, 0);">官方技术群：</span>
+                    <br>
+                    <span style="color: rgb(39, 39, 39);">群1：1029775623、群2：309639681</span>
+                    <br>
+                    <br>
+                    <span style="color: rgb(0, 190, 0);">( :</span>
+                    <n>&nbsp;</n>
+                    <span style="color: rgb(39, 39, 39);"><a class="inlink" href="https://space.bilibili.com/84500837"
+                            style="color:rgba(0, 0, 0, 0.938);" target="_blank">哔哩哔哩</a></span>
+                    <n>&nbsp;</n>
+                    <span style="color: rgb(39, 39, 39);"><a class="inlink" href="https://github.com/soevai/"
+                            style="color:rgba(0, 0, 0, 0.938);" target="_blank">Github</a></span>
+                    <n>&nbsp;</n>
+                    <span style="color: rgb(39, 39, 39);"><a class="inlink" href="https://blog.csdn.net/qq_46077301"
+                            style="color:rgba(0, 0, 0, 0.938);" target="_blank">CSDN</a></span>
+                    <n>&nbsp;</n>
+                    <span style="color: rgb(39, 39, 39);"><a class="inlink" href="https://meta.natapp4.cc/tools/packet"
+                            style="color:rgba(0, 0, 0, 0.938);" target="_blank">我的工具</a></span>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <footr>
+            <div class="container con">
+                <span id="momk"></span>
+                <script language="javascript">
+                    function show_date_time() {
+                        window.setTimeout("show_date_time()", 1000);
+                        BirthDay = new Date("2016/3/1 9:30:00");
+                        today = new Date();
+                        timeold = (today.getTime() - BirthDay.getTime());
+                        sectimeold = timeold / 1000
+                        secondsold = Math.floor(sectimeold);
+                        msPerDay = 24 * 60 * 60 * 1000
+                        e_daysold = timeold / msPerDay
+                        daysold = Math.floor(e_daysold);
+                        e_hrsold = (daysold - e_daysold) * -24;
+                        hrsold = Math.floor(e_hrsold);
+                        e_minsold = (hrsold - e_hrsold) * -60;
+                        minsold = Math.floor((hrsold - e_hrsold) * -60);
+                        seconds = Math.floor((minsold - e_minsold) * -60);
+                        momk.innerHTML = "本站已运行: " + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                    }
+                    show_date_time();
+                </script>
+
+                <canvas id="canvas" width="800" height="300"></canvas>
+            </div>
+            <script>
+                var audioContext;
+                var audioBuffer;
+                var audioBufferSourceNode;
+                var analyser;
+
+                var canvas = document.getElementById("canvas");
+                var canvasCtx = canvas.getContext("2d");
+
+                canvas.width = 1500;
+                canvas.height = 500;
+
+                window.onload = async function() {
+                    audioContext = new(window.AudioContext || window.webkitAudioContext || window.mozAudioContext)();
+                    analyser = audioContext.createAnalyser();
+                    analyser.fftSize = 256;
+                    analyser.connect(audioContext.destination);
+
+                    var url = './music/music.mp3';
+                    const response = await fetch(url);
+                    const arrayBuffer = await response.arrayBuffer();
+                    audioBuffer = await audioContext.decodeAudioData(arrayBuffer);
+                };
+
+                $('#playButton').on('click', function() {
+                    if (!audioContext) {
+                        initAudio();
+                    }
+
+                    if (audioBufferSourceNode && audioBufferSourceNode.isPlaying) {
+                        audioBufferSourceNode.stop();
+                        audioBufferSourceNode.disconnect();
+                        audioBufferSourceNode.isPlaying = false;
+                        $('#playButton').text('播放音乐');
+                    } else {
+                        if (audioBuffer) {
+                            if (audioBufferSourceNode) {
+                                audioBufferSourceNode.stop();
+                                audioBufferSourceNode.disconnect();
+                            }
+
+                            audioBufferSourceNode = audioContext.createBufferSource();
+                            audioBufferSourceNode.buffer = audioBuffer;
+                            audioBufferSourceNode.connect(analyser);
+                            audioBufferSourceNode.start();
+                            audioBufferSourceNode.isPlaying = true;
+
+                            var bufferLength = analyser.frequencyBinCount;
+                            var dataArray = new Uint8Array(bufferLength);
+
+                            function draw() {
+                                drawVisual = requestAnimationFrame(draw);
+                                analyser.getByteFrequencyData(dataArray);
+                                canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
+                                var barWidth = (200 / bufferLength) * 5.5;
+                                var barHeight;
+                                var x = 0;
+
+                                for (var i = 0; i < bufferLength; i++) {
+                                    barHeight = dataArray[i];
+                                    var hue = i + (barHeight / 255) * 360;
+                                    var saturation = barHeight / 255 * 50;
+                                    var lightness = 80;
+                                    canvasCtx.fillStyle = 'hsl(' + hue + ', ' + saturation + '%, ' + lightness + '%)';
+                                    var dynamicHeight = canvas.height * (barHeight / 300);
+                                    canvasCtx.fillRect(x, 0, barWidth, dynamicHeight / 2);
+                                    x += barWidth + 1;
+                                }
+                            }
+                            $('#playButton').text('停止播放');
+                            draw();
+
+                            audioBufferSourceNode.onended = function() {
+                                $('#playButton').text('播放音乐');
+                            };
+                        }
+                    }
+                });
+            </script>
+</body>
+
+</html>
